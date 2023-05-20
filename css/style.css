@@ -174,8 +174,9 @@ img{
 }
 
 .chevron{
-    
+    background-image: url("image/chevron-right.svg");
 }
+
 .project-hover{
     transform: scale(.4);
     opacity: 0;
@@ -197,14 +198,14 @@ img{
 .box:hover img{
     visibility: hidden;
     transform: scale(.8);
-    opacity: 0; 
+    opacity: .4; 
     transition: 300ms ease-in-out;
 }
 
 .box:hover{
     color: #000;
     content: "asdadsa";
-    background-color: #ffffff;
+    background-color: #f1070700;
     transition: 300ms linear ease-in-out;
 }
 .show-filtered{

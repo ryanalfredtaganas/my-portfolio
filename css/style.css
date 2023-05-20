@@ -156,13 +156,15 @@ img{
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 4px, rgb(234, 213, 55) 0px 0px 0px 8px;
     background-color: #EAD537;
     cursor: pointer;
+    transition: 200ms ease-out;
 } 
 
-.project-nav:active {
+.project-nav::selection {
     border-radius: .5rem;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 4px, rgb(234, 213, 55) 0px 0px 0px 8px;
     background-color: #EAD537;
     cursor: pointer;
+    transition: 200ms ease-in-out;
 } 
 
 .filter{
@@ -171,7 +173,19 @@ img{
     flex-direction: row;
 }
 
+.chevron{
+    
+}
+.project-hover{
+    transform: scale(.4);
+    opacity: 0;
+}
 
+.box:hover .project-hover{
+    transform: scale(1);
+    opacity: 1;
+    transition: 400ms ease-in-out;
+}
 
 .box{
     
@@ -180,6 +194,19 @@ img{
     flex: 1 1 30%; /*grow | shrink | basis */
 }
 
+.box:hover img{
+    visibility: hidden;
+    transform: scale(.8);
+    opacity: 0; 
+    transition: 300ms ease-in-out;
+}
+
+.box:hover{
+    color: #000;
+    content: "asdadsa";
+    background-color: #ffffff;
+    transition: 300ms linear ease-in-out;
+}
 .show-filtered{
     display: block;
 }

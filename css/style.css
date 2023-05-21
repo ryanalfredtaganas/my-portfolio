@@ -324,8 +324,10 @@ img{
         font-size: 1rem;
     }
     .carousel-text{
-        color: #000;
-        font-size: .5rem;
+        font-size: 1rem !important;
+        opacity: 1 !important;
+        top: 0% !important;
+        text-shadow: 2px 3px 5px rgba(0,0,0,0.8) !important;
     }
     .project-nav{
         font-size: 1rem;

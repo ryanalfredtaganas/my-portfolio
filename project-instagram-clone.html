@@ -17,31 +17,108 @@
   <body>
 
     <style>
-      
+      .login-form{
+        border: solid 1px #d6d6d6;
+        padding: 10px;
+      }
+      .sign-up{
+        border: solid 1px #d6d6d6;
+        padding: 15px;
+      }
+      input[type=text]{
+  border: 1px solid #eef0f0;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+input[type=text]:focus{
+  outline: none;
+
+}
+
+input[type=password]{
+  border: 1px solid #eef0f0;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+input[type=password]:focus{
+  outline: none;
+
+}
+
+.btn-login{
+    font-size: 24px;
+    background-color: #4db5f9;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer{
+    text-align: center;
+    
+}
+.footer-links{
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(153, 153, 153);
+}
+
+.footer-links:not(:last-child){
+    padding: 10px;
+
+}
     </style>
     
-    <div class="container-fluid h-75 d-flex align-items-center justify-content-center">
-        <div class="row  gx-5 ">
-      <div id="welcome" class="col-lg-6 d-flex justify-content-center align-items-start flex-column">
-        
-      </div>
-    <div id="column2" class="col-lg-6">
-      <div class="login-form d-flex flex-column justify-content-center">
-        <div class="Email"><input type="text" placeholder="Phone number, username, or email"></div>
-        <div class="password"><input type="password" placeholder="Password"></div>
-        <div><button class="btnlogin"><b>Log in</b></button></div>
+    <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
+    <div class="row gx-5 ">
+    <div  class="col-lg-6 d-flex justify-content-center align-items-start flex-column">
+        <img src="images/Instagram-Login-Image.png" height="581.15px" width="380.317px">
+    </div>
+    <div class="col-lg-6">
+    <div class="login-form p-5 d-flex flex-column justify-content-center text-center mb-3">
+        <div><img src="images/Instagram-Logo.png" alt="" height="" width="320px"></div>
+        <div class="email mb-3"><input type="text" placeholder="Phone number, username, or email"></div>
+        <div class="password mb-3"><input type="password" placeholder="Password"></div>
+        <div class="btn-login text-center my-3">Log in</button></div>
+        <div>OR</div>
+        <div>Log in with Facebook</div>
         <div><a class="forgot_password" href=""> Forgot Password?</a></div>
         <span></span>
-        <div><button class="btncreate"><strong>Create new account</strong></button></div>
-      </div>
-      <div class="text-center pt-4" style="padding: 10px; font-size: 14px;"><b>Create a Page</b> for a Celebrity, band or business.</div>
-    
+    </div>
+    <div class="sign-up text-center" style="font-size: 24px;">Dont have an account? <a>Sign up</a></div>
+    <div class="text-center pt-4"> Get the app.</div>
     </div>
     </div>
     </div>
 
-    <footer>
-
+    <footer class="fixed-bottom">
+        <div class="pb-5">
+        <a class="footer-links">Meta</a>
+        <a class="footer-links">About</a>
+        <a class="footer-links">Blog</a>
+        <a class="footer-links">Help</a>
+        <a class="footer-links">API</a>
+        <a class="footer-links">Privacy</a>
+        <a class="footer-links">Terms</a>
+        <a class="footer-links">Top Accounts</a>
+        <a class="footer-links">Locations</a>
+        <a class="footer-links">Instagram Lite</a>
+        <a class="footer-links">Contact Uploading & Non-Users</a>
+        <a class="footer-links">Meta Verified</a>
+    </div>
+    <div class="pb-5">
+        <a class="footer-links">English</a>
+        <a class="footer-links">© 2023 Instagram from Meta</a>
+    </div>
     </footer>
     
 

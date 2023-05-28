@@ -17,6 +17,10 @@
   <body>
 
     <style>
+      body{
+        height: 100vh;
+      }
+      
       .login-form{
         border: solid 1px #d6d6d6;
         padding: 10px;
@@ -26,76 +30,94 @@
         padding: 15px;
       }
 
-input[type=text]:focus{
-  outline: none;
+      input[type=text]:focus{
+         outline: none;
 
-}
+      }
 
 
-input[type=password]:focus{
-  outline: none;
+      input[type=password]:focus{
+        outline: none;
 
-}
+      }
 
-.btn-login{
-    font-size: 14px;
-    font-weight:600;
-    background-color: #4db5f9;
-    color: white;
-    display: block;
-    padding: 7px 20px;
-    border-radius: 10px;
-}
+      .btn-login{
+        font-size: 14px;
+        font-weight:600;
+        background-color: #4db5f9;
+        color: white;
+        display: block;
+        padding: 7px 20px;
+        border-radius: 10px;
+      }
 
-footer{
-    text-align: center;
-    
-}
+      .forgot-password{
+        text-decoration: none;
+        font-size: 12px;
+        color:  #2851A3;
+      }
+        footer{
+        text-align: center;
+        }
 
-input[type=text],input[type=password]{
-  font-size: 14px;
-  border: 1px solid #eef0f0;
-  box-sizing: border-box;
-  width: 100%;
-  border-radius: 8px;
-  padding: 14px 16px;
+      input[type=text],input[type=password]{
+        font-size: 12px;
+        border: 1px solid #d8d8d8;
+        background-color: #fafafa;
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 3px;
+        padding: 10px ;
+      
+      }
+      .footer-links{
+        font-size: 12px;
+        text-decoration: none;
+        color: rgb(124, 124, 124);
+      }
 
-}
-.footer-links{
-    font-size: 12px;
-    text-decoration: none;
-    color: rgb(124, 124, 124);
-}
+      .footer-links:not(:last-child){
+        padding: 10px;
+      
+      }
 
-.footer-links:not(:last-child){
-    padding: 10px;
-
-}
+      .divider{
+        display: inline-flex;
+        vertical-align: middle;
+        justify-content: start;
+        width: 30%;
+        border-top: 1px solid rgb(230, 230, 230);
+        background-color: #4db5f9;
+      }
     </style>
     
     <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
-    <div class="row gx-5 ">
-    <div  class="col-lg-6 d-flex justify-content-center align-items-start flex-column">
-        <img src="images/Instagram-Login-Image.png" height="581.15px" width="380.317px">
-    </div>
+    <div class="row gx-5">
+    <div  class="col-lg-6 d-none d-sm-block">
+      <div class="d-flex justify-content-center align-middle">
+        <img src="images/Instagram-Login-Image.png" height="auto" width="auto">
+      </div></div>
     <div class="col-lg-6">
     <div class="login-form p-5 d-flex flex-column justify-content-center text-center mb-3">
-        <div><img src="images/Instagram-Logo.png" alt="" height="" width="320px"></div>
+        <div><img src="images/Instagram-Logo.png" alt=""  width="175px;" ></div>
         <div class="email mb-3"><input type="text" placeholder="Phone number, username, or email"></div>
         <div class="password mb-3"><input type="password" placeholder="Password"></div>
         <div class="btn-login text-center my-3">Log in</button></div>
-        <div>OR</div>
-        <div>Log in with Facebook</div>
-        <div><a class="forgot_password" href=""> Forgot Password?</a></div>
-        <span></span>
+        <div class="mb-3"><span class="divider"></span><span class="" style="color: rgb(110, 110, 110); font-size: 13px; font-weight: 600;">OR</span><span class="divider"></span></div>
+        <div class="mb-3" style="color: #2851A3; font-weight: 600; font-size: 14px;"><img src="images/fb-ico.png" alt="" srcset="" height="15px"> Log in with Facebook</div>
+        <div><a class="forgot-password" href=""> Forgot Password?</a></div>
     </div>
     <div class="sign-up text-center" style="font-size: 15px;">Dont have an account? <a style="color: rgb(0, 117, 252); font-weight: 600 ;">Sign up</a></div>
     <div class="text-center pt-4"> Get the app.</div>
+<div class="d-flex justify-content-center pt-3 justify-content-evenly">
+  <img src="images/GooglePlay.png" height="40px" width="134.283px" alt="" srcset="">
+  <img src="images/Microsoft.png" height="40px" width="110.767px" alt="" srcset="">
+</div>
     </div>
     </div>
     </div>
 
-    <footer class="fixed-bottom">
+    <footer class="container-fluid">
         <div class="pb-5">
         <a class="footer-links">Meta</a>
         <a class="footer-links">About</a>

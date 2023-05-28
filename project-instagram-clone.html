@@ -25,28 +25,12 @@
         border: solid 1px #d6d6d6;
         padding: 15px;
       }
-      input[type=text]{
-  border: 1px solid #eef0f0;
-  box-sizing: border-box;
-  font-size: 18px;
-  width: 100%;
-  border-radius: 8px;
-  padding: 14px 16px;
-}
 
 input[type=text]:focus{
   outline: none;
 
 }
 
-input[type=password]{
-  border: 1px solid #eef0f0;
-  box-sizing: border-box;
-  font-size: 18px;
-  width: 100%;
-  border-radius: 8px;
-  padding: 14px 16px;
-}
 
 input[type=password]:focus{
   outline: none;
@@ -54,11 +38,12 @@ input[type=password]:focus{
 }
 
 .btn-login{
-    font-size: 24px;
+    font-size: 14px;
+    font-weight:600;
     background-color: #4db5f9;
     color: white;
     display: block;
-    padding: 10px;
+    padding: 7px 20px;
     border-radius: 10px;
 }
 
@@ -66,10 +51,20 @@ footer{
     text-align: center;
     
 }
+
+input[type=text],input[type=password]{
+  font-size: 14px;
+  border: 1px solid #eef0f0;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 8px;
+  padding: 14px 16px;
+
+}
 .footer-links{
-    font-size: 24px;
+    font-size: 12px;
     text-decoration: none;
-    color: rgb(153, 153, 153);
+    color: rgb(124, 124, 124);
 }
 
 .footer-links:not(:last-child){
@@ -81,7 +76,6 @@ footer{
     <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
     <div class="row gx-5 ">
     <div  class="col-lg-6 d-flex justify-content-center align-items-start flex-column">
-        WIP tys
         <img src="images/Instagram-Login-Image.png" height="581.15px" width="380.317px">
     </div>
     <div class="col-lg-6">
@@ -95,7 +89,7 @@ footer{
         <div><a class="forgot_password" href=""> Forgot Password?</a></div>
         <span></span>
     </div>
-    <div class="sign-up text-center" style="font-size: 24px;">Dont have an account? <a>Sign up</a></div>
+    <div class="sign-up text-center" style="font-size: 15px;">Dont have an account? <a style="color: rgb(0, 117, 252); font-weight: 600 ;">Sign up</a></div>
     <div class="text-center pt-4"> Get the app.</div>
     </div>
     </div>

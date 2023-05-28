@@ -23,21 +23,17 @@
       
       .login-form{
         border: solid 1px #d6d6d6;
-        padding: 10px;
+        height: auto;
       }
       .sign-up{
         border: solid 1px #d6d6d6;
         padding: 15px;
       }
 
-      input[type=text]:focus{
-         outline: none;
 
-      }
-
-
-      input[type=password]:focus{
+      input[type=password]:focus,input[type=text]:focus{
         outline: none;
+        border: solid 2px black;
 
       }
 
@@ -61,6 +57,7 @@
         }
 
       input[type=text],input[type=password]{
+
         font-size: 12px;
         border: 1px solid #d8d8d8;
         background-color: #fafafa;
@@ -74,6 +71,7 @@
         font-size: 12px;
         text-decoration: none;
         color: rgb(124, 124, 124);
+        cursor: pointer;
       }
 
       .footer-links:not(:last-child){
@@ -93,11 +91,11 @@
     
     <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
     <div class="row gx-5">
-    <div  class="col-lg-6 d-none d-sm-block">
+    <div  class="col d-none d-sm-block">
       <div class="d-flex justify-content-center align-middle">
         <img src="images/Instagram-Login-Image.png" height="auto" width="auto">
       </div></div>
-    <div class="col-lg-6">
+    <div class="col">
     <div class="login-form p-5 d-flex flex-column justify-content-center text-center mb-3">
         <div><img src="images/Instagram-Logo.png" alt=""  width="175px;" ></div>
         <div class="email mb-3"><input type="text" placeholder="Phone number, username, or email"></div>

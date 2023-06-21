@@ -35,13 +35,15 @@ html,body{
     align-items: center;
 }
 .sidebar {
-    z-index: 1;
+    border-radius: 10px;
+    z-index: 5;
     display: flex;
     align-items: center;
     vertical-align: middle;
     justify-content: center;
     position: fixed;
     top: 30%;
+    left: 2%;
     width: 60px;
     height: 34%;
     background-color: #EFEFEF;
@@ -222,6 +224,8 @@ img{
 /*footer*/
 
 footer{
+    z-index: -2;
+    position: inherit;
 }
 
 .footer-links{
@@ -271,83 +275,6 @@ footer{
     transition: 200ms ease-in-out;
 }
 
-
-
-@media only screen and (max-width: 576px) {
-    .navbar{
-        padding-top: 0px;
-        position: fixed;
-    }
-    .divider{
-        border-top: 0px solid #707070;
-    }
-    .divider-footer{
-        border-top: 0px solid #707070;
-    }
-    .intro-text{
-        text-align: center;
-        font-size: 3em;
-    }
-    .intro-text-ii{
-        text-align: center;
-        font-size: 1.50rem;
-    }
-    .intro-img{
-        width: 70%;
-        height: auto;
-    }
-    .nav-logo{
-        width: 10%;
-        height: auto;
-    }
-    .nav-contact{
-        display: flex;
-        justify-content: end;
-        text-align: end;
-        align-items: end;
-        width: fit-content;
-        margin-left: 0;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .title-text{
-        text-align: center;
-        font-weight: 700;
-        font-size: 2.1rem;
-    }
-    .desc-text{
-        text-align: center;
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
-    .default-btn{
-        align-self: center;
-    }
-    .item{
-        font-size: 1rem;
-    }
-    .carousel-text{
-        font-size: 1rem !important;
-        opacity: 1 !important;
-        top: 0% !important;
-        text-shadow: 2px 3px 5px rgba(0,0,0,0.8) !important;
-    }
-    .project-nav{
-        font-size: 1rem;
-    }
-    .footer-link, .footer-text{
-        text-align: center;
-    }
-    .box{
-
-        flex: 1 1 100%; /*grow | shrink | basis */
-    }
-    .filter{
-        flex-direction: column;
-    }
-    
-  }
-
   .img-hover{
     opacity: 1;
   display: block;
@@ -373,22 +300,19 @@ footer{
     opacity: 0;
     transition: 200ms ease-in-out;
     top: 30%;
-
   }
 
   .item:hover{
     background-color: #000000;
-
   }
+
   .item:hover .carousel-text{
     opacity: 1;
     transition: 200ms ease-in-out;
     top: 0;
   }
   
-
-
-.img-hover-ii{
+    .img-hover-ii{
     opacity: 1;
   display: block;
   width: 100%;
@@ -532,10 +456,13 @@ footer{
     height: 400px;
     cursor: pointer;
 }
+
+
 .show-img{
-    z-index: 999;
+    z-index: 2;
     display: none;
 }
+
 .show-img .overlay{
     z-index: 2;
     width: 100%;
@@ -549,15 +476,16 @@ footer{
     z-index: 2;
     width: 80%;
     height: 80%;
-    background: rgba(92, 92, 92, 0.363);
+    /* background: rgba(92, 92, 92, 0.363); */
     object-fit: contain;
     position:fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    overflow: hidden
+    overflow: hidden;
 }
 .img-show span{
+    cursor: pointer;
     color: #ffffff;
     font-weight: 700;
     position: absolute;
@@ -567,6 +495,7 @@ footer{
     cursor: pointer;
 }
 .img-show img{
+    z-index: 2;
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -574,4 +503,80 @@ footer{
     top: 0;
     left: 0;
 }
+
+@media only screen and (max-width: 576px) {
+    .navbar{
+        padding-top: 0px;
+        position: fixed;
+    }
+    .divider{
+        border-top: 0px solid #707070;
+    }
+    .divider-footer{
+        border-top: 0px solid #707070;
+    }
+    .intro-text{
+        text-align: center;
+        font-size: 3em;
+    }
+    .intro-text-ii{
+        text-align: center;
+        font-size: 1.50rem;
+    }
+    .intro-img{
+        width: 70%;
+        height: auto;
+    }
+    .nav-logo{
+        width: 10%;
+        height: auto;
+    }
+    .nav-contact{
+        display: flex;
+        justify-content: end;
+        text-align: end;
+        align-items: end;
+        width: fit-content;
+        margin-left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .title-text{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.1rem;
+    }
+    .desc-text{
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .default-btn{
+        align-self: center;
+    }
+    .item{
+        font-size: 1rem;
+    }
+    .carousel-text{
+        font-size: 1rem !important;
+        opacity: 1 !important;
+        top: 0% !important;
+        text-shadow: 2px 3px 5px rgba(0,0,0,0.8) !important;
+    }
+    .project-nav{
+        font-size: 1rem;
+    }
+    .footer-link, .footer-text{
+        text-align: center;
+    }
+    .box{
+
+        flex: 1 1 100%; /*grow | shrink | basis */
+    }
+    .filter{
+        flex-direction: column;
+    }
+    
+  }
+
 /*End style*/

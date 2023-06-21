@@ -35,19 +35,19 @@ function removeClass(element, name){
     element.className = arr1.join(" ");
 }
 
-document.addEventListener("click",function (e){
-    if(e.target.classList.contains("gallery-item")){
-        const src = e.target.getAttribute("src");
-        document.querySelector(".modal-img").src = src;
-        const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
-        myModal.show();
-    }
-  })
+// document.addEventListener("click",function (e){
+//     if(e.target.classList.contains("gallery-item")){
+//         const src = e.target.getAttribute("src");
+//         document.querySelector(".modal-img").src = src;
+//         const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
+//         myModal.show();
+//     }
+//   })
 
 
-  $('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
+//   $('#myModal').on('shown.bs.modal', function () {
+//     $('#myInput').trigger('focus')
+//   })
 
   $(document).ready(function() {
     $(".owl-carousel").owlCarousel();
@@ -70,6 +70,22 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+// popup
+
+$(function () {
+  "use strict";
+  
+  $(".popup img").click(function () {
+      var $src = $(this).attr("src");
+      $(".show-img").fadeIn();
+      $(".img-show img").attr("src", $src);
+  });
+  
+  $("span, .overlay, .img-show").click(function () {
+      $(".show-img").fadeOut();
+  });
+  
+});
 
 function SendMail(){
 

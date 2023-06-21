@@ -13,7 +13,7 @@ body::before{
     left: 0px;
     opacity: 0.1;
     position: fixed;
-    z-index: -1;
+    z-index: -2;
     background-image: url("../images/MyWebsiteBG.jpg");
     background-repeat: no-repeat;
     max-width: 100%;
@@ -224,7 +224,7 @@ img{
 /*footer*/
 
 footer{
-    z-index: -2;
+    z-index: -1;
     position: inherit;
 }
 
@@ -459,12 +459,12 @@ footer{
 
 
 .show-img{
-    z-index: 2;
+    z-index: 3;
     display: none;
 }
 
 .show-img .overlay{
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.877);
@@ -473,7 +473,7 @@ footer{
     left: 0;
 }
 .show-img .img-show{
-    z-index: 2;
+    z-index: 3;
     width: 80%;
     height: 80%;
     /* background: rgba(92, 92, 92, 0.363); */
@@ -485,6 +485,7 @@ footer{
     overflow: hidden;
 }
 .img-show span{
+    z-index: 3;
     cursor: pointer;
     color: #ffffff;
     font-weight: 700;
@@ -495,7 +496,7 @@ footer{
     cursor: pointer;
 }
 .img-show img{
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     height: 100%;
     object-fit: contain;

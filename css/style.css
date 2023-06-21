@@ -221,6 +221,10 @@ img{
 }
 /*footer*/
 
+footer{
+    z-index: -1;
+}
+
 .footer-links{
     text-align: center;
 }
@@ -542,7 +546,7 @@ img{
     left: 0;
 }
 .show-img .img-show{
-    
+    z-index: 2;
     width: 80%;
     height: 80%;
     background: rgba(92, 92, 92, 0.363);

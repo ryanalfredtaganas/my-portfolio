@@ -77,7 +77,7 @@ $(function () {
   
   $(".popup img").click(function () {
       var $src = $(this).attr("src");
-      $(".show-img").fadeIn();
+      $(".show-img").fadeIn(0);
       $(".img-show img").attr("src", $src);
   });
   
